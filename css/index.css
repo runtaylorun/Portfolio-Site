@@ -3,9 +3,20 @@
 	font-family: 'Varta', sans-serif;
 }
 
+body {
+	margin: 0;
+}
+
 hr {
 	margin: 0 auto;
 	width: 75%;
+	animation: slideInRight 2s;
+}
+
+i {
+	animation: slideInBottom 1.5s;
+	color: #ff851b;
+	cursor: pointer;
 }
 
 .navBar {
@@ -17,30 +28,45 @@ hr {
 .container {
 	display: flex;
 	justify-content: center;
-	width: 50%;
+	width: 40%;
 }
 
 .linkList {
 	padding: 0;
-	width: 100%;
+	width: 90%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
 	color: #af7ac5;
+	margin-top: 20px;
+	animation: slideInRight 1.5s;
 }
 
 .linkList a {
 	text-decoration: none;
-	color: #af7ac5;
+	color: #ff851b;
+	animation: fadeIn 3s;
+	letter-spacing: 1.3px;
+	font-size: 1.1em;
+	border: 2px solid #ff851b;
+	border-radius: 20px;
+	padding: 10px;
+	font-weight: 300;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.linkList a:hover {
+	background-color: #ff851b;
+	color: white;
 }
 
 .main {
 	width: 100%;
 	height: 100vh;
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
+	flex-direction: column;
 	align-items: center;
-	color: #af7ac5;
 }
 
 .landingContainer {
@@ -51,20 +77,25 @@ hr {
 }
 
 .landingContainer h1 {
-	font-size: 6em;
+	font-size: 4em;
+	left: -500px;
+	font-weight: 700;
+	letter-spacing: 3px;
+	animation: slideInLeft 2s;
 }
 
 .landingContainer h2 {
-	font-size: 3em;
+	font-size: 2em;
+	letter-spacing: 2px;
 }
 
 .welcomeContainer {
 	display: flex;
-	border-right: 1px solid black;
 	justify-content: center;
 	align-items: center;
 	grid-column: 1;
 	grid-row: 1 / 4;
+	animation: slideInTop 2s;
 }
 
 .nameContainer {
@@ -75,4 +106,84 @@ hr {
 	text-align: center;
 	grid-column: 2;
 	grid-row: 1 / 4;
+}
+
+.nameHeader {
+	animation: slideInTop 2s;
+}
+
+.jobHeader {
+	animation: slideInBottom 2s;
+}
+
+.about {
+	height: 100vh;
+	background-color: #ff851b;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-shadow: inset -3px 0 13px rgba(0, 0, 0, 1);
+}
+
+.about h2 {
+	text-align: center;
+	color: white;
+	font-size: 2em;
+}
+
+.about p {
+	color: white;
+	text-align: center;
+	width: 50%;
+	line-height: 35px;
+	font-size: 1.3em;
+	letter-spacing: 1.5px;
+}
+
+.skills {
+	height: 55vh;
+	display: flex;
+	justify-content: center;
+}
+
+.skillsContainer {
+	position: relative;
+	display: flex;
+	top: -50px;
+	border-radius: 30px;
+	width: 50%;
+	background-color: white;
+	box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.3);
+	z-index: 1;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.skillColumn {
+	width: 33%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.skillColumn h3 {
+	text-align: center;
+}
+
+.skillColumn ul {
+	list-style: none;
+}
+
+.skillsContainer div:nth-child(1) {
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
+	border-right: 1px solid black;
+}
+
+.skillsContainer div:nth-child(3) {
+	border-left: 1px solid black;
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 30px;
 }
