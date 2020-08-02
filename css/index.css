@@ -3,8 +3,13 @@
 	font-family: 'Varta', sans-serif;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	margin: 0;
+	scroll-behavior: smooth;
 }
 
 hr {
@@ -17,6 +22,11 @@ i {
 	animation: slideInBottom 1.5s;
 	color: #ff851b;
 	cursor: pointer;
+	transition: color 0.3s;
+}
+
+i:hover {
+	color: black;
 }
 
 .navBar {
@@ -34,11 +44,12 @@ i {
 .linkList {
 	padding: 0;
 	width: 90%;
+	margin-top: 15px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
+	align-items: center;
 	color: #af7ac5;
-	margin-top: 20px;
 	animation: slideInRight 1.5s;
 }
 
@@ -138,7 +149,7 @@ i {
 	width: 50%;
 	line-height: 35px;
 	font-size: 1.3em;
-	letter-spacing: 1.5px;
+	letter-spacing: 1px;
 }
 
 .skills {
@@ -151,7 +162,7 @@ i {
 	position: relative;
 	display: flex;
 	top: -60px;
-	border-radius: 30px;
+	border-radius: 20px;
 	width: 50%;
 	background-color: white;
 	box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.3);
@@ -189,14 +200,153 @@ i {
 	list-style: none;
 }
 
-/* .skillsContainer div:nth-child(1) {
-	border-top-left-radius: 30px;
-	border-bottom-left-radius: 30px;
-	border-right: 1px solid black;
+.contactForm {
+	height: 70vh;
+	background-color: #ff851b;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.skillsContainer div:nth-child(3) {
-	border-left: 1px solid black;
-	border-top-right-radius: 30px;
-	border-bottom-right-radius: 30px;
-} */
+.projects {
+	height: 100vh;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.projectsContainer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	height: 50%;
+}
+
+.project {
+	background-color: #ff851b;
+	color: white;
+	border-radius: 20px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 15%;
+	height: 50%;
+}
+
+.project button {
+	background-color: #ff851b;
+	border: 2px solid white;
+	font-size: 1em;
+	margin-bottom: 30px;
+	color: white;
+	width: 45%;
+	border-radius: 5px;
+	padding: 3px;
+	transition: color 0.2s, background-color 0.2s;
+}
+
+.project button:hover {
+	background-color: white;
+	color: black;
+	cursor: pointer;
+}
+
+form {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	width: 30%;
+	height: 75%;
+}
+
+form h2 {
+	color: white;
+	font-size: 2em;
+	border-bottom: 3px solid white;
+	padding-bottom: 15px;
+}
+
+form button {
+	background-color: #ff851b;
+	border: 2px solid white;
+	font-size: 1.5em;
+	color: white;
+	width: 45%;
+	border-radius: 5px;
+	padding: 5px;
+	transition: color 0.2s, background-color 0.2s;
+}
+
+form button:hover {
+	background-color: white;
+	color: #ff851b;
+	cursor: pointer;
+}
+
+.inputContainer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.submitContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.inputContainer input {
+	color: white;
+	border: none;
+	padding-bottom: 10px;
+	background-color: #ff851b;
+	border-bottom: 2px solid white;
+	font-size: 1.5em;
+	transition: border-bottom-color 0.3s;
+}
+
+input:hover {
+	border-bottom-color: black;
+}
+
+.inputContainer input::placeholder {
+	color: white;
+	font-size: 0.8em;
+}
+
+.inputContainer input:focus {
+	outline: none;
+	border-bottom-color: black;
+}
+
+.footer {
+	background-color: #ff851b;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	flex-direction: column;
+}
+
+.footer i {
+	color: white;
+	transition: color 0.3s;
+	margin-bottom: 10px;
+}
+
+.footer i:hover {
+	color: black;
+}
+
+.socialMedia {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	margin-bottom: 100px;
+	width: 20%;
+}

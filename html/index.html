@@ -4,23 +4,29 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="../css/index.css" type="text/css" />
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
-		<script src="https://kit.fontawesome.com/4b2ce24c2a.js" crossorigin="anonymous"></script>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/4b2ce24c2a.js"
+			crossorigin="anonymous"
+		></script>
 
 		<title>Home</title>
 	</head>
 	<body>
-		<div class="navBar">
+		<div id="navBar" class="navBar">
 			<div class="container">
 				<div class="linkList">
-					<a href="index.html">Home</a>
-					<a href="#">About</a>
+					<a href="#navBar">Home</a>
+					<a href="#about">About</a>
 					<a href="#">Work</a>
-					<a href="contact.html">Contact</a>
+					<a href="#footer">Contact</a>
 				</div>
 			</div>
 		</div>
-		<div class="main">
+		<div id="main" class="main">
 			<div class="landingContainer">
 				<div class="welcomeContainer">
 					<h1>Welcome</h1>
@@ -31,15 +37,17 @@
 					<h2 class="jobHeader">Software Developer</h2>
 				</div>
 			</div>
-			<i class="fas fa-2x fa-chevron-down"></i>
+			<a href="#about"><i class="fas fa-3x fa-chevron-down"></i></a>
 		</div>
-		<div class="about">
+		<div id="about" class="about">
 			<h2>Hey, thanks for checking out my page</h2>
 			<p>
-				I started programming as a Sophomore in high school where I made my first html webpage. I fell in love with the
-				problem solving aspect of coding and the satisfaction that it gave me and I haven't looked back since I started.
-				I am now currently a junior at the University of Southern Indiana where I am majoring in computer science and
-				look to graduate in the fall of 2022.
+				I started programming as a Sophomore in high school where I made my
+				first html webpage. I fell in love with the problem solving aspect of
+				coding and the satisfaction that it gave me and I haven't looked back
+				since I started. I am now currently a junior at the University of
+				Southern Indiana where I am majoring in computer science and look to
+				graduate in the fall of 2022.
 			</p>
 		</div>
 		<div class="skills">
@@ -72,6 +80,55 @@
 					</ul>
 				</div>
 			</div>
+		</div>
+		<div id="projects" class="projects">
+			<h2>Projects</h2>
+			<div class="projectsContainer">
+				<div id="project1" class="project">
+					<h3>Tappy Dodge</h3>
+					<button>Learn more</button>
+				</div>
+				<div class="project">
+					<h3>Split Calculator</h3>
+					<button>Learn more</button>
+				</div>
+				<div class="project">
+					<h3>Race Report Generator</h3>
+					<button>Learn more</button>
+				</div>
+				<div class="project">
+					<h3>XC Manager</h3>
+					<button>Learn more</button>
+				</div>
+			</div>
+		</div>
+		<div id="contact" class="contactForm">
+			<form>
+				<h2>Want to get in contact?</h2>
+
+				<div class="inputContainer">
+					<input placeholder="Email" type="text" />
+				</div>
+				<div class="inputContainer">
+					<input placeholder="Name" type="text" />
+				</div>
+				<div class="inputContainer">
+					<input placeholder="Message" type="text" />
+				</div>
+				<div class="submitContainer">
+					<button>Send</button>
+				</div>
+			</form>
+		</div>
+		<div id="footer" class="footer">
+			<div class="socialMedia">
+				<i class="fab fa-github fa-3x"></i>
+				<i class="fab fa-linkedin-in fa-3x"></i>
+				<i class="fab fa-instagram fa-3x"></i>
+			</div>
+			<a href="#navBar"
+				><i class="fa fa-3x fa-chevron-up" aria-hidden="true"></i
+			></a>
 		</div>
 	</body>
 </html>
